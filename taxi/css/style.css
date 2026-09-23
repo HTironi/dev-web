@@ -43,7 +43,7 @@ header nav li.button{
   margin: 3vw 0 ;
   padding: 0 2vw;
   border-radius: 8px;
-
+  
 }
 .banner p.buttons{
   display: flex;
@@ -90,7 +90,33 @@ header nav li.button{
   font-weight: 700;
   padding: 0 0 20px 0;
 }
-
+.download p a {
+  background: #252B42;
+  color: aliceblue;
+  padding: 15px;
+  border-radius: 5px;
+}
+.download p {
+  margin: 0 0 5vw 0;
+}
+.services {
+  margin: 3vw 5vw;
+}
+.services h2 {
+  font-size: 1.1rem;
+}
+.services .text {
+  margin: 0 0 20px 0;
+}
+.services li {
+  background: #f6f6f6;
+  padding: 20px;
+  margin: 10px 0;
+}
+.services h3 {
+  padding: 30px 0 10px 0;
+  font-size: 1.07rem;
+}
 
 @media only screen and (min-width: 600px){
   header{
@@ -149,8 +175,22 @@ header nav li.button{
   }*/
   .download{
     padding: 3vw;
+    background: url(../images/iphone-pet-ui.png) no-repeat, url(../images/iphone-pet-ui.png) no-repeat, linear-gradient(#FBBC05, #FBBC05);
+    background-size: auto 140%, auto 100%;
+    background-position: center  -50%, 80% -5vw;
   }
   .download p{
-    width: 50%;
+    width: 20%;
+  }
+  .services{
+    display: flex;
+  }
+  .services .text {
+    width: 30%;
+  }
+  .services ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
