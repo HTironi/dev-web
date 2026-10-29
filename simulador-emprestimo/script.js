@@ -26,20 +26,22 @@ function calculo(submit) {
     let bruto = Number(document.getElementById("bruto").value);
     let valor = Number(document.getElementById("valor").value);
     let prazoMeses = Number(document.getElementById("prazo").value);
-    
+
     valorAnos += valor
     for (let a = 0; prazoAnos > a; a++) {
         valorAnos = valorAnos * 1.02;
     }
     valorMeses = valorAnos / 12;
 
-    if (valorMeses <= bruto * 0.3) {
-        capacidade = true;
-    }
-    else {
+    if (valorMeses >= bruto * 0.3) {
         capacidade = false;
         document.getElementById("permissao").textContent = "Possivel comprometimento de renda"
     }
-    document.getElementById("resposta").textContent =`O valor das parcelas seria  R$ ${valorMeses.toFixed(2)} por mês`
+    else {
+        capacidade = true;
+        document.getElementById("permissao").textContent = ""
+
+    }
+    document.getElementById("resposta").textContent = `O valor das parcelas seria  R$ ${valorMeses.toFixed(2)} por mês`
 
 }
