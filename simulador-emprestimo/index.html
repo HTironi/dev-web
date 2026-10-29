@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Empréstimo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <section class="formulario">
@@ -13,22 +15,36 @@
             Simulador de Empréstimo
         </h1>
         <form>
-            <label for="bruto">Renda Bruta Mensal (R$):</label>
-            <input id="bruto" type="number" placeholder="Digite sua renda bruta mensal">
-            <label for="valor">Valor do Empréstimo (R$):</label>
-            <input id="valor" type="number" placeholder="Digite o valor do empréstimo">
-            <label for="prazo">Renda Bruta Mensal (meses):</label>
-            <input id="prazo" type="number" placeholder="Digite o prazo em meses">
-
-            <button id="submit" onclick="calculo">Calcular Parcelas</button>
-
-
+            <p>
+                <label for="bruto">Renda Bruta Mensal (R$):</label>
+                <input id="bruto" type="number" placeholder="Digite sua renda bruta mensal">
+            </p>
+            <p>
+                <label for="valor">Valor do Empréstimo (R$):</label>
+                <input id="valor" type="number" placeholder="Digite o valor do empréstimo">
+            </p>
+            <p>
+                <label for="prazo">Prazo de pagamento (meses):</label>
+                <input id="prazo" type="number" placeholder="Digite o prazo em meses">
+            </p>
+            <p>
+                <button id="submit" onclick="calculo()">Calcular Parcelas</button>
+            </p>
         </form>
 
+        <p id="resposta">
+
+        </p>
+
+        <p id="permissao">
+
+
+        </p>
 
     </section>
 
-    
+
 </body>
 <script src="script.js"></script>
+
 </html>

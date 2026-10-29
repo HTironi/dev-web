@@ -14,6 +14,32 @@ Além do cálculo, a aplicação deverá realizar uma **análise da capacidade d
 
 - Se o empréstimo está dentro de uma condição considerada adequada; ou
 - Se há risco de comprometimento da renda.*/
+let bruto;
+let valor;
+let prazoMeses;
+let valorAnos = 0;
+let valorMeses;
+let capacidade;
+let prazoAnos = prazoMeses / 12
+function calculo(submit) {
+    event.preventDefault();
+    let bruto = Number(document.getElementById("bruto").value);
+    let valor = Number(document.getElementById("valor").value);
+    let prazoMeses = Number(document.getElementById("prazo").value);
+    
+    valorAnos += valor
+    for (let a = 0; prazoAnos > a; a++) {
+        valorAnos = valorAnos * 1.02;
+    }
+    valorMeses = valorAnos / 12;
 
+    if (valorMeses <= bruto * 0.3) {
+        capacidade = true;
+    }
+    else {
+        capacidade = false;
+        document.getElementById("permissao").textContent = "Possivel comprometimento de renda"
+    }
+    document.getElementById("resposta").textContent =`O valor das parcelas seria  R$ ${valorMeses.toFixed(2)} por mês`
 
-
+}
