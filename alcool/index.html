@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Empréstimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="titulo">
+            <h1>Álcool ou Gasolina?</h1>
+            <h2>Descubra qual combustível compensa mais.</h2>
+        </div>
+        <div class="form">
+            <p>
+                <label for="alcool">Preço do Álcool (R$ por litro):</label>
+            </p>
+            <p>
+                <input placeholder="Digite o preço do alcool" type="number" id="alcool">
+            </p>
+            <p>
+                <label for="gasolina">Preço da Gasolina (R$ por litro):</label>
+            </p>
+            <p>
+                <input placeholder="Digite o preço da gasolina" type="number" id="gasolina">
+            </p>
+            <p class="btn">
+                <button id="calcular" class="calcular" onclick="compensa()" >Calcular</button>
+            </p>
+        </div>
+        <div class="resultado">
+            <p class="compensa" id="compensa">Preencha os valores e clique em calcular para ver qual compensa mais.</p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
