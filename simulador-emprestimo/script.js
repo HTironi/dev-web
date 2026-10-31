@@ -20,28 +20,27 @@ let prazoMeses;
 let valorAnos = 0;
 let valorMeses;
 let capacidade;
-let prazoAnos = prazoMeses / 12
+let prazoAnos = prazoMeses / 12;
 function calculo(submit) {
-    event.preventDefault();
-    let bruto = Number(document.getElementById("bruto").value);
-    let valor = Number(document.getElementById("valor").value);
-    let prazoMeses = Number(document.getElementById("prazo").value);
+  event.preventDefault();
+  let bruto = Number(document.getElementById("bruto").value);
+  let valor = Number(document.getElementById("valor").value);
+  let prazoMeses = Number(document.getElementById("prazo").value);
 
-    valorAnos += valor
-    for (let a = 0; prazoAnos > a; a++) {
-        valorAnos = valorAnos * 1.02;
-    }
-    valorMeses = valorAnos / 12;
+  valorAnos += valor;
+  for (let a = 0; prazoAnos > a; a++) {
+    valorAnos = valorAnos * 1.02;
+  }
+  valorMeses = valorAnos / 12;
 
-    if (valorMeses >= bruto * 0.3) {
-        capacidade = false;
-        document.getElementById("permissao").textContent = "Possivel comprometimento de renda"
-    }
-    else {
-        capacidade = true;
-        document.getElementById("permissao").textContent = ""
-
-    }
-    document.getElementById("resposta").textContent = `O valor das parcelas seria  R$ ${valorMeses.toFixed(2)} por mês`
-
+  if (valorMeses >= bruto * 0.3) {
+    capacidade = false;
+    document.getElementById("permissao").textContent =
+      "Possivel comprometimento de renda";
+  } else {
+    capacidade = true;
+    document.getElementById("permissao").textContent = "";
+  }
+  document.getElementById("resposta").textContent =
+    `O valor das parcelas seria  R$ ${valorMeses.toFixed(2)} por mês`;
 }

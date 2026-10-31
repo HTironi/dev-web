@@ -16,19 +16,18 @@ Assim, a aplicação deverá:
 
 let gasolina;
 let alcool;
-function compensa(){
+function compensa() {
+  alcool = Number(document.getElementById("alcool").value);
+  gasolina = Number(document.getElementById("gasolina").value);
 
-    alcool = Number(document.getElementById("alcool").value);
-    gasolina = Number(document.getElementById("gasolina").value);
-    
-    if(alcool<(gasolina*0.7)){
-        document.getElementById("compensa").textContent = "O álcool é mais vantajoso.";
-    }
-    else if(alcool>(gasolina*0.7)){
-        document.getElementById("compensa").textContent = "A gasolina é mais vantajosa.";
-    }
-    else{
-        document.getElementById("compensa").textContent = "Os dados inseridos são invalidos";
-    }
-
+  if (alcool < gasolina * 0.7) {
+    document.getElementById("compensa").textContent =
+      "O álcool é mais vantajoso.";
+  } else if (alcool > gasolina * 0.7) {
+    document.getElementById("compensa").textContent =
+      "A gasolina é mais vantajosa.";
+  } else {
+    document.getElementById("compensa").textContent =
+      "Os dados inseridos são invalidos";
+  }
 }

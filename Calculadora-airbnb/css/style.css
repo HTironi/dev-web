@@ -1,0 +1,55 @@
+html {
+  background: rgb(223, 216, 219);
+}
+body {
+  padding: 2vw;
+  border-radius: 10px;
+  border: rgb(156, 19, 87) 1px solid;
+  background-color: white;
+  margin: 4vw;
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+form {
+  text-align: center;
+  border: black 1px solid;
+  margin-inline: 5vw; 
+  border-radius: 10px;
+  padding: 2vw;
+
+}
+p label{
+  padding: 2vw;
+}
+select{
+  display: inline;
+  padding: 1vw;
+  border-bottom: black 1px solid;
+
+}
+form div {
+    display: inline-flex;
+}
+.check {
+  border-bottom: 1px black solid;
+}
+.cobrado {
+  color: rgb(66, 66, 66);
+  text-align: center;
+}
+button{
+  background-color: rgb(187, 53, 120);
+  color: white;
+  padding: 2vw 6vw;
+  border-radius: 10px;
+  margin-top: 2vw; ;
+}
+div{
+  display: flex;
+}
+.cobranca{
+  text-align: right;
+}

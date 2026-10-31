@@ -1,56 +1,50 @@
-html{
-    background: rgb(240, 239, 236) ;
+html {
+  background: rgb(240, 239, 236);
 }
-section{
-    padding: 2vw;
-    margin: 2vw;
-    margin-top: 5vw;
-    border: rgb(81, 134, 65) 2px solid;
-    border-radius: 2vw;
-    background-color: white;
-    text-align: center;
+section {
+  padding: 2vw;
+  margin: 2vw;
+  margin-top: 5vw;
+  border: rgb(81, 134, 65) 2px solid;
+  border-radius: 2vw;
+  background-color: white;
+  text-align: center;
 }
-h2{
-    font-size: 1.1rem;
-    font-weight: 500;
-    
+h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
-.titulo{
-    padding-bottom: 2vw ;
+.titulo {
+  padding-bottom: 2vw;
 }
-.form{
-    padding: 1vw 3vw;
-    border-top: rgba(81, 134, 65, 0.7) 2px solid ;
-    border-bottom: rgba(81, 134, 65, 0.7) 2px solid ;
-
-
+.form {
+  padding: 1vw 3vw;
+  border-top: rgba(81, 134, 65, 0.7) 2px solid;
+  border-bottom: rgba(81, 134, 65, 0.7) 2px solid;
 }
 
 label {
-    font-size: 1.2rem; 
-
+  font-size: 1.2rem;
 }
 
-input{
-
-    padding: 2vw 10vw;
-    
+input {
+  padding: 2vw 10vw;
 }
-p{
-    font-size: 1.2rem;   
+p {
+  font-size: 1.2rem;
 }
-.btn{
-    text-align: center;
+.btn {
+  text-align: center;
 }
-button{
-    background-color: rgb(81, 134, 65);
-    color: white;
-    display: inline-block;
-    font-size: 1.1rem;
-    padding: 10px 120px;
-    border-radius: 10px;
+button {
+  background-color: rgb(81, 134, 65);
+  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 10px 120px;
+  border-radius: 10px;
 }
 
-p.compensa{
-    padding: 2vw;
+p.compensa {
+  padding: 2vw;
 }

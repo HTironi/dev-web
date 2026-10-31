@@ -1,56 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador de Empréstimo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <section class="formulario">
-        <h1>
-            Simulador de Empréstimo
-        </h1>
-        <form>
-            <p>
-                <label for="bruto">Renda Bruta Mensal (R$):</label>
-            </p>
-            <p>
-                <input id="bruto" type="number" placeholder="Digite sua renda bruta">
-            </p>
-            <p>
-                <label for="valor">Valor do Empréstimo (R$):</label>
-            </p>
-            <p>
-                <input id="valor" type="number" placeholder="Digite o valor">
-            </p>
-            <p>
-                <label for="prazo">Prazo de pagamento (meses):</label>
-            </p>
-            <p>
-                <input id="prazo" type="number" placeholder="Digite o prazo em meses">
-            </p>
-            <p>
-                <button id="submit" onclick="calculo()">Calcular Parcelas</button>
-            </p>
-        </form>
-
-        <p id="resposta">
-
+      <h1>Simulador de Empréstimo</h1>
+      <form>
+        <p>
+          <label for="bruto">Renda Bruta Mensal (R$):</label>
         </p>
-
-        <p class="permissao" id="permissao">
-
-
+        <p>
+          <input
+            id="bruto"
+            type="number"
+            placeholder="Digite sua renda bruta"
+          />
         </p>
+        <p>
+          <label for="valor">Valor do Empréstimo (R$):</label>
+        </p>
+        <p>
+          <input id="valor" type="number" placeholder="Digite o valor" />
+        </p>
+        <p>
+          <label for="prazo">Prazo de pagamento (meses):</label>
+        </p>
+        <p>
+          <input
+            id="prazo"
+            type="number"
+            placeholder="Digite o prazo em meses"
+          />
+        </p>
+        <p>
+          <button id="submit" onclick="calculo()">Calcular Parcelas</button>
+        </p>
+      </form>
 
+      <p id="resposta"></p>
+
+      <p class="permissao" id="permissao"></p>
     </section>
-
-
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>
